@@ -41,7 +41,6 @@ span {
 }
 @media only screen and (max-width: 600px){
   .wrapper {
-    width: 900px;
     display: grid;
     grid-gap: 10px;
     grid-template-columns:  90vw;
