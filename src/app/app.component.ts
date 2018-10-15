@@ -10,7 +10,7 @@ import { BankDataModel } from './model/BankData.model';
 export class AppComponent implements OnInit {
 
   cardData: Array<BankDataModel>;
-  pathImge = 'banks/'
+
   constructor(private bankApi: BankServiceService) {
 
   }

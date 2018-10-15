@@ -1,18 +1,20 @@
 export class BankDataModel {
-    logos: [];
+    logos;
     name: string;
     id: number;
     color: string;
     mainImg: string;
+    thumbImg: string;
 
     constructor(
         name: string,
-        logos: [],
+        logos = [],
         id: number
     ) {
         this.id = id;
         this.name  = name ;
         this.logos = logos ;
-        this.mainImg =  `banks/${id}/logos/main`;
+        this.mainImg =  `https://demo.biapi.pro/2.0/banks/${id}/logos/main`;
+        this.thumbImg =  `https://demo.biapi.pro/2.0/banks/${id}/logos/thumbnail`;
     }
 }

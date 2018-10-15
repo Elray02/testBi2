@@ -4,8 +4,12 @@
 
 <div class="wrapper">
     <div class="box box{{i}}"  *ngFor="let item of cardData let i = index" >
-      {{item.name}}
-      <img src="" alt="">
+      <p class="name">
+        <img class="logo" src="{{item.thumbImg}}" alt="tumbs logo bank">
+        <span> <strong> {{item.name}} </strong></span>
+      </p>
+      <img class="main" src="{{item.mainImg}}" alt="main logo bank">
+      
     </div>
   </div>
   
